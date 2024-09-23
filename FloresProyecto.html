@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores Amarillas Animadas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffccf2; /* Fondo rosa */
+        }
+        svg {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 100 100">
+        <!-- Paisaje -->
+        <!-- Cielo -->
+        <rect x="0" y="0" width="100" height="50" fill="lightblue" />
+        <!-- Césped -->
+        <rect x="0" y="50" width="100" height="50" fill="lightgreen" />
+
+        <!-- Tallo 1 -->
+        <rect x="48" y="20" width="4" height="30" fill="green">
+            <animate attributeName="height" from="0" to="30" dur="2s" fill="freeze" />
+        </rect>
+
+        <!-- Pétalos de la flor 1 -->
+        <g>
+            <circle cx="50" cy="20" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="55" cy="25" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="50" cy="30" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="45" cy="25" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <!-- Rotación de los pétalos -->
+            <animateTransform attributeName="transform" type="rotate" from="0 50 25" to="360 50 25" dur="10s" repeatCount="indefinite" />
+        </g>
+
+        <!-- Centro de la flor 1 -->
+        <circle cx="50" cy="25" r="3" fill="orange">
+            <animate attributeName="r" from="0" to="3" dur="2s" fill="freeze" />
+        </circle>
+
+        <!-- Tallo 2 -->
+        <rect x="28" y="40" width="4" height="30" fill="green">
+            <animate attributeName="height" from="0" to="30" dur="2s" fill="freeze" />
+        </rect>
+
+        <!-- Pétalos de la flor 2 -->
+        <g>
+            <circle cx="30" cy="40" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="35" cy="45" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="30" cy="50" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="25" cy="45" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <!-- Rotación de los pétalos -->
+            <animateTransform attributeName="transform" type="rotate" from="0 30 45" to="360 30 45" dur="10s" repeatCount="indefinite" />
+        </g>
+
+        <!-- Centro de la flor 2 -->
+        <circle cx="30" cy="45" r="3" fill="orange">
+            <animate attributeName="r" from="0" to="3" dur="2s" fill="freeze" />
+        </circle>
+
+        <!-- Nuevas flores -->
+        <!-- Tallo 3 -->
+        <rect x="68" y="50" width="4" height="30" fill="green">
+            <animate attributeName="height" from="0" to="30" dur="2s" fill="freeze" />
+        </rect>
+        <!-- Pétalos de la flor 3 -->
+        <g>
+            <circle cx="70" cy="50" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="75" cy="55" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="70" cy="60" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="65" cy="55" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <!-- Rotación de los pétalos -->
+            <animateTransform attributeName="transform" type="rotate" from="0 70 55" to="360 70 55" dur="10s" repeatCount="indefinite" />
+        </g>
+        <!-- Centro de la flor 3 -->
+        <circle cx="70" cy="55" r="3" fill="orange">
+            <animate attributeName="r" from="0" to="3" dur="2s" fill="freeze" />
+        </circle>
+
+        <!-- Flor 4 -->
+        <rect x="8" y="60" width="4" height="30" fill="green">
+            <animate attributeName="height" from="0" to="30" dur="2s" fill="freeze" />
+        </rect>
+        <g>
+            <circle cx="10" cy="60" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="15" cy="65" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="10" cy="70" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <circle cx="5" cy="65" r="5" fill="yellow">
+                <animate attributeName="r" from="0" to="5" dur="2s" fill="freeze" />
+            </circle>
+            <animateTransform attributeName="transform" type="rotate" from="0 10 65" to="360 10 65" dur="10s" repeatCount="indefinite" />
+        </g>
+        <circle cx="10" cy="65" r="3" fill="orange">
+            <animate attributeName="r" from="0" to="3" dur="2s" fill="freeze" />
+        </circle>
+    </svg>
+</body>
+</html>
